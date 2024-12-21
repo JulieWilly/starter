@@ -1,15 +1,16 @@
 // import CreateBlog from "../Blogs/CreateBlog";
 import SubscribePage from "../../Components/SubscribePage";
+import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
 import LatestBlogs from "./LatestBlogs";
 import MostRead from "./MostRead";
-import RecentBlogs from "./RecentBlogs";
 
 const Home = () => {
   return (
     <div>
       <Heros />
-      <RecentBlogs />
+      <FeaturedBlogs />
+
       <LatestBlogs />
       <MostRead />
       <SubscribePage />
