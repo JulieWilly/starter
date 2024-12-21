@@ -1,10 +1,12 @@
-import {  Link, NavLink } from "react-router";
+import {  Link, NavLink, useNavigate } from "react-router";
 
 
 const Navigation = () => {
-
+const redirectTo = useNavigate();
     // navigate to sign in page.
-    
+    const toSignIn = () => {
+redirectTo('sign-in');
+    }
   return (
     <>
       <div className="flex items-center justify-between p-2 flex-row border-2 border-black bg-[#183350]">
