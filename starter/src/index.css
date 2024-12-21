@@ -13,6 +13,10 @@ font-family: "Roboto Condensed", serif;
 @tailwind components;
 @tailwind utilities;
 
+.checked {
+  color: orange;
+}
+
 
 
 /* :root {
