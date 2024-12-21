@@ -5,7 +5,7 @@ const Navigation = () => {
 const redirectTo = useNavigate();
     // navigate to sign in page.
     const toSignIn = () => {
-redirectTo('sign-in');
+redirectTo('/sign-in');
     }
   return (
     <>
