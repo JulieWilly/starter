@@ -1,6 +1,4 @@
-import { IoFilterOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
-import blog from "../../../assets/blog.jpg";
 import BlogCard from "./BlogCard";
 const RecentBlogs = () => {
   return (
