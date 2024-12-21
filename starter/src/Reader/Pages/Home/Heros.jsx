@@ -12,6 +12,7 @@ const Heros = () => {
         </p>
         <button className="mt-6 border-black border-1 bg-black p-2 text-white w-36 rounded ">Start your blog</button>
       </div>
+      
     </div>
   );
 }
