@@ -26,7 +26,7 @@ redirectTo('/sign-in');
                 })}
                 className={"hover:border-b-2 border-black  p-1 "}
               >
-                <span className=" text-black text-lg"> Start</span>
+                <span className=" text-black text-lg"> Start </span>
               </NavLink>
             </li>
             <li>
@@ -37,7 +37,7 @@ redirectTo('/sign-in');
                 })}
                 className={"hover:border-b-2 border-black  p-1 "}
               >
-                <span className=" text-black text-lg"> Grow</span>
+                <span className=" text-black text-lg"> Grow  </span>
               </NavLink>
             </li>
             <li>
@@ -48,7 +48,7 @@ redirectTo('/sign-in');
                 })}
                 className={"hover:border-b-2  border-black   p-1 "}
               >
-                <span className=" text-black text-lg"> Monetize</span>
+                <span className=" text-black text-lg"> Monetize </span>
               </NavLink>
             </li>
             <li>
@@ -80,13 +80,13 @@ redirectTo('/sign-in');
               className="text-black pr-2 pl-2 pt-1 pb-1 w-24 rounded border-2 border-black hover:bg-black hover:text-white  "
               onClick={toSignIn}
             >
-            Login
+              Login
             </button>
             <button
               className="bg-black text-white pr-2 pl-2 pt-1 pb-1  rounded hover: bg-blue-300 "
               onClick={toSignIn}
             >
-Register for free
+              Register for free
             </button>
           </div>
         </div>
