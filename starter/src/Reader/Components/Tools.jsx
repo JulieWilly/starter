@@ -17,13 +17,10 @@ const Tools = () => {
         <div className="w-2 bg-[#1567F2]"></div>
 
         <div className="bg-[#ECF3FE] flex flex-row w-full  items-center    justify-between pl-4 pr-4">
-          <div className='flex  gap-8 items-center'>
-            <IoIosInformationCircleOutline className="text-xl" />
-            <h1>
-              Explore trending tools that will help you move your business to
-              the next level.
-            </h1>
-          </div>
+          <h1>
+            Explore trending tools that will help you move your business to the
+            next level.
+          </h1>
 
           <div className="flex flex-row items-center gap-8">
             <button onClick={viewTools} className=" text-[#1567F2]">
