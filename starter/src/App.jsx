@@ -27,7 +27,6 @@ function App() {
         <Route path="/start" element={<Start />} />
         <Route path="/grow" element={<Grow />} />
         <Route path="/monetize" element={<Monetize />} />
-        <Route path="/topics" element={<Topics />} />
         <Route path="/read-blog/:blog_id" element={<ReadBlog />} />
         <Route path="/view-tools" element={<ViewTools />} />
       </Routes>

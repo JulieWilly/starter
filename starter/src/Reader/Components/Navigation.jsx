@@ -2,23 +2,28 @@ import {  Link, NavLink, useNavigate } from "react-router";
 // import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdNavigateNext } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
+import { useState } from "react";
 const navigatioins = [
-  { id: 1, name: "Start", path:'/start' },
-  { id: 2, name: "Grow", path:'/grow'},
-  { id: 3, name: "Monetize", path:'/monetize' },
-  { id: 4, name: "Topics", path:'/topics' },
+  { id: 1, name: "Start", path:'/start' ,},
+  { id: 2, name: "Grow", path:'/grow' },
+  { id: 3, name: "Monetize", path:'/monetize'},
+  // { id: 4, name: "Topics", path:'/topics', icon: <MdNavigateNext /> },
 ];
 const Navigation = () => {
 const redirectTo = useNavigate();
+const [open, setOpen] = useState();
     // navigate to sign in page.
     const toSignIn = () => {
 redirectTo('/sign-in');
     }
 
+
       
   return (
     <>
-      <div className="flex items-center justify-around p-4 flex-row w-full    ">
+      <div
+        className={` flex items-center justify-around p-4 flex-row w-full    `}
+      >
         <Link to={"/"}>
           <h1 className="text-3xl  font-bold text-black hover:text-[#646464]">
             Starter
@@ -27,23 +32,55 @@ redirectTo('/sign-in');
 
         <nav>
           <ul className="flex items-center justify-between flex-row gap-4  ">
+            <li className="flex gap-4">
+              {navigatioins.map((name) => (
+                <NavLink
+                  key={name.id}
+                  to={name.path}
+                  style={({ isActive }) => ({
+                    color: isActive ? "red" : "black",
+                  })}
+                  className={"hover:border-b-2 border-black  "}
+                >
+                  <span className=" text-black text-lg tracking-wide">
+                    {" "}
+                    {name.name}
+                  </span>
+                  {name.icon}
+                </NavLink>
+              ))}
+            </li>
             <li>
-             {
-              navigatioins.map((name,) => (
-                 <NavLink
-                 key={name.id}
-                to={name.path}
+              <NavLink
                 style={({ isActive }) => ({
                   color: isActive ? "red" : "black",
                 })}
-                className={"hover:border-b-2 border-black  p-1 "}
+                onClick={() => {
+                  setOpen(!open);
+                }}
+                className={`hover:border-b-2 border-black flex items-center  `}
               >
-                <span className=" text-black text-lg tracking-wide"> {name.name}</span>
+                <span className=" text-black text-lg tracking-wide relative">
+                  Topics
+                </span>
+                <MdNavigateNext className="text-black rotate-90 text-2xl" />
               </NavLink>
-              ))
-             }
+              <div
+                className={`absolute delay-150 border border-black   bg-white rounded-lg  text-white  space-y-2  ${
+                  open ? "hidden" : "block"
+                } p-2 w-32`}
+              >
+                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                  Topic 1
+                </h1>
+                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                  Topic 2
+                </h1>{" "}
+                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                  Topic 3
+                </h1>
+              </div>
             </li>
-         
           </ul>
         </nav>
         <div className=" flex flex-row items-center">
