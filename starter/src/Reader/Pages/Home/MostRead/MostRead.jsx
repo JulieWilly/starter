@@ -1,6 +1,6 @@
 import TopNavigation from "../../../Components/TopNavigation";
 import { IoIosArrowDown } from "react-icons/io";
-import BlogCard from "../BlogCard";
+import BlogCard from "../FeaturedCard";
 import MostReadCard from "./MostReadCard";
 
 const MostRead = () => {
@@ -15,9 +15,7 @@ const MostRead = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8">
-        {/* <MostReadCard /> */}
-      </div>
+      <div className="mt-8">{/* <MostReadCard /> */}</div>
     </div>
   );
 };
