@@ -2,6 +2,7 @@ import {  Link, NavLink, useNavigate } from "react-router";
 // import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdNavigateNext } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
+import Button from "./Button";
 
 const Navigation = () => {
 const redirectTo = useNavigate();
@@ -37,7 +38,7 @@ redirectTo('/sign-in');
                 })}
                 className={"hover:border-b-2 border-black  p-1 "}
               >
-                <span className=" text-black text-lg"> Grow  </span>
+                <span className=" text-black text-lg"> Grow </span>
               </NavLink>
             </li>
             <li>
@@ -77,13 +78,13 @@ redirectTo('/sign-in');
 
           <div className="flex gap-2">
             <button
-              className="text-black pr-2 pl-2 pt-1 pb-1 w-24 rounded border-2 border-black hover:bg-black hover:text-white  "
+              className="hover:scale-95 hover:transition-all  text-black pr-2 pl-2 pt-1 pb-1 w-24 rounded border border-black hover:bg-[#1B4942] hover:border-none hover:text-white  "
               onClick={toSignIn}
             >
               Login
             </button>
             <button
-              className="bg-black text-white pr-2 pl-2 pt-1 pb-1  rounded hover: bg-blue-300 "
+              className="bg-[#1B4942] text-white pr-2 pl-2 pt-2 pb-2  rounded  hover:scale-95 hover:transition-all "
               onClick={toSignIn}
             >
               Register for free
