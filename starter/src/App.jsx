@@ -10,12 +10,13 @@ import Monetize from "./Reader/Pages/Monetize/Monetize";
 import Topics from "./Reader/Pages/Topics/Topics";
 import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
 import Tools from "./Reader/Components/Tools";
+import ViewTools from "./Reader/Pages/Tools/ViewTools";
 // import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {
   return (
     <BrowserRouter>
-    <Tools />
+      <Tools />
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,8 +27,9 @@ function App() {
         <Route path="/grow" element={<Grow />} />
         <Route path="/monetize" element={<Monetize />} />
         <Route path="/topics" element={<Topics />} />
-      <Route path='/read-blog/:blog_id' element={<ReadBlog />} />
-       </Routes>
+        <Route path="/read-blog/:blog_id" element={<ReadBlog />} />
+        <Route path="/view-tools" element={<ViewTools  />} />
+      </Routes>
     </BrowserRouter>
   );
 }
