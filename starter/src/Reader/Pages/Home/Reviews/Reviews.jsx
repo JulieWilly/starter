@@ -43,6 +43,7 @@ const Reviews = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className="w-full  "
+        autoPlay={true}
       >
         <div className="w-full p-2">
           <ReviewsCard />

@@ -2,6 +2,7 @@
 import Footer from "../../Components/Footer";
 import IntorSection from "../../Components/IntorSection";
 import SubscribePage from "../../Components/SubscribePage";
+import ExploreTool from "./ExploreTool";
 import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
 import LatestBlogs from "./Latest/LatestBlogs";
@@ -15,6 +16,7 @@ const Home = () => {
       <IntorSection />
       <FeaturedBlogs />
       <MostRead />
+      <ExploreTool />
       <LatestBlogs />
       <Reviews />
       <SubscribePage />
