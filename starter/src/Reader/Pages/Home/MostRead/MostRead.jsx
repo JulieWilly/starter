@@ -16,7 +16,7 @@ const MostRead = () => {
         </div>
       </div>
       <div className="mt-8">
-        <MostReadCard />
+        {/* <MostReadCard /> */}
       </div>
     </div>
   );

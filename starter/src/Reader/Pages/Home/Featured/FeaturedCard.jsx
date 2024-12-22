@@ -13,7 +13,7 @@ const FeaturedCard = () => {
       className="  mt-6
     "
     >
-      <div className="flex gap-2  ">
+      <div className="flex gap-2 bg-red-500  ">
         <MostRead />
       </div>
     </div>

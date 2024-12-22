@@ -13,8 +13,8 @@ const Home = () => {
       <Heros />
       <IntorSection />
       <FeaturedBlogs />
-      <MostRead />
-      <LatestBlogs />
+      {/* <MostRead /> */}
+      {/* <LatestBlogs /> */}
 
       <SubscribePage />
       <Footer />
