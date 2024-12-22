@@ -1,14 +1,11 @@
 import React from 'react'
+import Image from '../../../Components/Image';
 
 const LeftCard = () => {
   return (
-    <div className="row-span-3 w-full max-h flex items-center flex-col border-2 border-green-500">
+    <div className="row-span-3 w-full max-h flex items-center flex-col">
       <div className="w-10/12 h-[20rem]">
-        <img
-          className="w-full h-full block object-cover"
-          src="https://images.pexels.com/photos/29237846/pexels-photo-29237846/free-photo-of-golden-ginkgo-leaves-in-toronto-s-fall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
-        />
+      <Image path={'https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?auto=compress&cs=tinysrgb&w=600'} />
       </div>
       <div className="p-2 w-10/12">
         <h1>Ideas to</h1>

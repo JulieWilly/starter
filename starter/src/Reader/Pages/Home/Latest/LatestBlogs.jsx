@@ -12,10 +12,9 @@ const LatestBlogs = () => {
     navigate('/read-blog/:blog_id')
   }
   return (
-    <div className="p-2 mt-2 ">
+    <div className=" p-8 pb-16 w-full">
       <TopNavigation sectName={"Latest Blogs"} />
       <LatestCard />
-
     </div>
   );
 }
