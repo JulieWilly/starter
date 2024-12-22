@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Reader/Pages/Home/Featured/Home";
+
 import Navigation from "./Reader/Components/Navigation";
 import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 import SignIn from "./Reader/Pages/Auth/SignIn";
@@ -11,6 +11,7 @@ import Topics from "./Reader/Pages/Topics/Topics";
 import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
 import Tools from "./Reader/Components/Tools";
 import ViewTools from "./Reader/Pages/Tools/ViewTools";
+import Home from "./Reader/Pages/Home/Home";
 // import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {

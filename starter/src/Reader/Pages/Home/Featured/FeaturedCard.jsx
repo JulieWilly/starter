@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-
+import BlogCard from '../BlogCard'
 import MostRead from "../MostRead/MostRead";
 const FeaturedCard = () => {
   const redirectTo = useNavigate();
@@ -14,7 +14,9 @@ const FeaturedCard = () => {
     "
     >
       <div className="flex gap-2  ">
-        <MostRead />
+        {/* <MostRead />
+         */}
+         <BlogCard />
       </div>
     </div>
   );
