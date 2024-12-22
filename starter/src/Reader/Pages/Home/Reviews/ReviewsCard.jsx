@@ -3,7 +3,7 @@ import Image from '../../../Components/Image';
 
 const ReviewsCard = () => {
   return (
-    <div className="w-1/4  justify-start gap-4  p-4 rounded-2xl bg-[#DDDFFE] mt-2">
+    <div className="w-full h-52 items-start flex flex-col justify-start   gap-4  p-4 rounded-2xl bg-[#DDDFFE] mt-2">
       <div className="flex flex-row gap-4 items-center ">
         <div
           className="w-16 h-16 rounded-full overflow-hidden
