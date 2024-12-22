@@ -1,7 +1,6 @@
-import TopNavigation from "../../../Components/TopNavigation";
+import TopNavigation from "../../Components/TopNavigation";
 import { IoIosArrowDown } from "react-icons/io";
-import BlogCard from "../BlogCard";
-import MostReadCard from "./MostReadCard";
+import BlogCard from "./BlogCard";
 
 const MostRead = () => {
   return (
@@ -16,10 +15,10 @@ const MostRead = () => {
         </div>
       </div>
       <div className="mt-8">
-        <MostReadCard />
+   
       </div>
     </div>
   );
-};
+}
 
-export default MostRead;
+export default MostRead
