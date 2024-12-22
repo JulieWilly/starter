@@ -8,9 +8,8 @@ const Carousell = () => {
           <Carousel
             showArrows={true}
             autoPlay
-            labels={"Start"}
             infiniteLoop
-            className=" h-full w-full"
+            className=" h-full w-full  grif place-content-center"
           >
             <div className="  flex items-center justify-center h-full">
               <span className="text-[8rem]"> 🚀</span>

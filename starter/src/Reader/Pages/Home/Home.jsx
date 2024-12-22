@@ -1,4 +1,5 @@
 // import CreateBlog from "../Blogs/CreateBlog";
+import Footer from "../../Components/Footer";
 import SubscribePage from "../../Components/SubscribePage";
 import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
@@ -14,6 +15,7 @@ const Home = () => {
       <LatestBlogs />
       <MostRead />
       <SubscribePage />
+      <Footer />
 
       {/* <CreateBlog /> */}
     </div>
