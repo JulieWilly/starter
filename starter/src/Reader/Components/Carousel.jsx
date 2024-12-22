@@ -1,9 +1,16 @@
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import JSConfetti from "js-confetti";
 
 const Carousell = () => { 
+const jsConfetti = new JSConfetti();
 
+const icons = () => {
+  jsConfetti.addConfetti({
+    emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
+  });
+};
         return (
           <Carousel
             showArrows={true}

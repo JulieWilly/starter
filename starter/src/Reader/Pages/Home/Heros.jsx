@@ -1,16 +1,9 @@
 import Carousell from "../../Components/Carousel";
 import SubscribeInput from "../../Components/SubscribeInput";
-import JSConfetti from "js-confetti";
 
 const Heros = () => {
   
-const jsConfetti = new JSConfetti();
 
-const icons = () => {
-  jsConfetti.addConfetti({
-    emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
-  });
-}
   return (
     <div className="  w-full h-[25rem] flex flex-row gap-4 items-center">
       <div className="mt-10 ml-20  w-1/2  ">

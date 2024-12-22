@@ -1,5 +1,6 @@
 // import CreateBlog from "../Blogs/CreateBlog";
 import Footer from "../../Components/Footer";
+import IntorSection from "../../Components/IntorSection";
 import SubscribePage from "../../Components/SubscribePage";
 import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
@@ -10,8 +11,8 @@ const Home = () => {
   return (
     <div>
       <Heros />
+      <IntorSection />
       <FeaturedBlogs />
-
       <LatestBlogs />
       <MostRead />
       <SubscribePage />
