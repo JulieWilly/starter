@@ -87,7 +87,7 @@ redirectTo('/sign-in');
               className="bg-[#1B4942] text-white pr-2 pl-2 pt-2 pb-2  rounded  hover:scale-95 hover:transition-all "
               onClick={toSignIn}
             >
-              Register for free
+              Sign up for free
             </button>
           </div>
         </div>

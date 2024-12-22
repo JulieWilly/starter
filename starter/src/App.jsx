@@ -8,6 +8,7 @@ import Start from "./Reader/Pages/Start/Start";
 import Grow from "./Reader/Pages/Grow/Grow";
 import Monetize from "./Reader/Pages/Monetize/Monetize";
 import Topics from "./Reader/Pages/Topics/Topics";
+import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
 // import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
         <Route path="/grow" element={<Grow />} />
         <Route path="/monetize" element={<Monetize />} />
         <Route path="/topics" element={<Topics />} />
-      </Routes>
+      <Route path='/read-blog/:blog_id' element={<ReadBlog />} />
+       </Routes>
     </BrowserRouter>
   );
 }
