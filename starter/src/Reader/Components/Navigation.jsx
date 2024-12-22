@@ -2,8 +2,12 @@ import {  Link, NavLink, useNavigate } from "react-router";
 // import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdNavigateNext } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
-import Button from "./Button";
-
+const navigatioins = [
+  { id: 1, name: "Start", path:'/start' },
+  { id: 2, name: "Grow", path:'/grow'},
+  { id: 3, name: "Monetize", path:'/monetize' },
+  { id: 4, name: "Topics", path:'/topics' },
+];
 const Navigation = () => {
 const redirectTo = useNavigate();
     // navigate to sign in page.
@@ -16,56 +20,30 @@ redirectTo('/sign-in');
     <>
       <div className="flex items-center justify-around p-4 flex-row w-full    ">
         <Link to={"/"}>
-          <h1 className="text-3xl  font-bold text-black">Starter</h1>
+          <h1 className="text-3xl  font-bold text-black hover:text-[#646464]">
+            Starter
+          </h1>
         </Link>
 
         <nav>
-          <ul className="flex items-center justify-between flex-row gap-2  ">
+          <ul className="flex items-center justify-between flex-row gap-4  ">
             <li>
-              <NavLink
-                to="/start"
+             {
+              navigatioins.map((name,) => (
+                 <NavLink
+                 key={name.id}
+                to={name.path}
                 style={({ isActive }) => ({
                   color: isActive ? "red" : "black",
                 })}
                 className={"hover:border-b-2 border-black  p-1 "}
               >
-                <span className=" text-black text-lg"> Start </span>
+                <span className=" text-black text-lg tracking-wide"> {name.name}</span>
               </NavLink>
+              ))
+             }
             </li>
-            <li>
-              <NavLink
-                to="/grow"
-                style={({ isActive }) => ({
-                  color: isActive ? "red" : "black",
-                })}
-                className={"hover:border-b-2 border-black  p-1 "}
-              >
-                <span className=" text-black text-lg"> Grow </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/monetize"
-                style={({ isActive }) => ({
-                  color: isActive ? "red" : "black",
-                })}
-                className={"hover:border-b-2  border-black   p-1 "}
-              >
-                <span className=" text-black text-lg"> Monetize </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/topics"
-                style={({ isActive }) => ({
-                  color: isActive ? "red" : "black",
-                })}
-                className={"hover:border-b-1 p-1 flex items-center flex-row "}
-              >
-                <span className=" text-black text-lg"> Topics</span>
-                <MdNavigateNext className="text-2xl  text-black rotate-90" />
-              </NavLink>
-            </li>
+         
           </ul>
         </nav>
         <div className=" flex flex-row items-center">
