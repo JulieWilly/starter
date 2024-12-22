@@ -1,23 +1,16 @@
-import { IoIosArrowDown } from "react-icons/io";
-import TopNavigation from "../../../Components/TopNavigation";
+import React from 'react'
+import TopNavigation from '../../../Components/TopNavigation'
+import MostReadCard from './MostReadCard'
 
 const MostRead = () => {
   return (
-    <div className="p-8 mt-4 w-full bg-[#FBF8F2]  ">
-      <TopNavigation sectName={"Most Read"} isSet={"true"} />
-      <div className="flex flex-row w-full items-center justify-between gap-2 mt-4">
-        <div className="flex items-center  gap-2">
-          <div className=" border-black border flex items-center justify-between rounded p-1 w-28 hover:bg-[#84888E] cursor-pointer hover:text-white">
-            <span>Catergory </span>
-            <IoIosArrowDown />
-          </div>
-        </div>
-      </div>
-      <div className="mt-8">
-        sdasa
+    <div className="p-8 pb-16 w-full bg-[#FBF8F2]  ">
+      <TopNavigation sectName={"Most Read"} isSet={"false"} />
+      <div>
+        <MostReadCard />
       </div>
     </div>
   );
-};
+}
 
-export default MostRead;
+export default MostRead

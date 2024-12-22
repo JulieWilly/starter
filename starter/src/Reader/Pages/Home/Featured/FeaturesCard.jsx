@@ -1,9 +1,7 @@
 
 import { CiBadgeDollar } from "react-icons/ci";
-import { SiCanva } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { SiZoho } from "react-icons/si";
-const BlogCard = () => {
+
+const FeaturesCard = () => {
   return (
     <div className="w-full  grid grid-cols-2 grid-rows-1 mt-4 gap-2">
       <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg">
@@ -62,6 +60,6 @@ const BlogCard = () => {
       </div>
     </div>
   );
-}
+};
 
-export default BlogCard
+export default FeaturesCard;

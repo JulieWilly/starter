@@ -15,7 +15,6 @@ const Home = () => {
       <FeaturedBlogs />
       <MostRead />
       <LatestBlogs />
-
       <SubscribePage />
       <Footer />
 
