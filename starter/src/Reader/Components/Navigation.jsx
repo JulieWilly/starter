@@ -58,9 +58,7 @@ redirectTo('/sign-in');
                 style={({ isActive }) => ({
                   color: isActive ? "red" : "black",
                 })}
-                className={
-                  "hover:border-b-1 p-1 flex items-center flex-row "
-                }
+                className={"hover:border-b-1 p-1 flex items-center flex-row "}
               >
                 <span className=" text-black text-lg"> Topics</span>
                 <MdNavigateNext className="text-2xl  text-black rotate-90" />
@@ -87,7 +85,7 @@ redirectTo('/sign-in');
               className="bg-[#1B4942] text-white pr-2 pl-2 pt-2 pb-2  rounded  hover:scale-95 hover:transition-all "
               onClick={toSignIn}
             >
-              Sign up for free
+              Start for free
             </button>
           </div>
         </div>

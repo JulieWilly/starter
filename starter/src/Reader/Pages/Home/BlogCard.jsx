@@ -1,179 +1,108 @@
-import blog from '../../../assets/blog.jpg'
 
+import { CiBadgeDollar } from "react-icons/ci";
+import { SiCanva } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiZoho } from "react-icons/si";
 const BlogCard = () => {
   return (
-    <div className="mt-4 h-auto flex items-center justify-start  flex-wrap flex-row gap-4  sm:flex  ">
-      <div className="w-72 flex flex-col  ">
-        <div className="w-full rounded-lg overflow-hidden">
+    <div className="w-full  grid grid-cols-3 grid-rows-1 mt-4 gap-2">
+      <div className="relative flex flex-row">
+        <div className=" relative w-1/2 h-52">
           <img
-            src={blog}
-            alt="blog image"
-            className="block object-fill w-full h-1/2"
+            className="object-cover w-full h-full "
+            src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
           />
         </div>
-
-        <div className="mt-2 p-1 flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h3>Authors Name</h3>
-
-            <span>12/15/2024</span>
+        <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
+          <CiBadgeDollar className="text-2xl" />
+        </span>
+        <div className="w-1/2 p-2 flex  justify-between flex-col">
+          <div>
+            <h1 className="line-clamp-2 text-xl font-bold">
+              This is a feature blog
+            </h1>{" "}
+            <h1 className="line-clamp-1 mt-2 font-light">
+              This is the subtitle of the featured blog.
+            </h1>
           </div>
-          <h2 className="font-medium text-xl  pb-1 truncate">
-            Blog title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae provident fuga quasi fugit, consequatur doloremque maiores
-            officia necessitatibus qui? Nihil laboriosam quis id voluptas aut
-            sit qui, modi repellat quibusdam!
-          </h2>
-          <span className=" line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-          </span>
-          <div className=" mt-2 flex flex-row justify-between items-center p-1">
-            <h4 className="text-sm mb-1 text-red-500">
-              Topic area of the blog
-            </h4>
-            <button className="bg-black text-white p-1 w-24 ">View more</button>
+          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
+            <SiCanva className="text-2xl" />
+            <FaAws className="text-2xl" />
+            <SiZoho className="text-3xl" />
+          </div>
+
+          <div className="flex flex-row justify-between ">
+            <h1 className="text-red-500 font-bold text-xl">Ideas</h1>
+            <h1 className="italic">12/05/2024</h1>
+          </div>
+        </div>
+      </div>
+      <div className="relative flex flex-row">
+        <div className=" relative w-1/2 h-52">
+          <img
+            className="object-cover w-full h-full "
+            src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
+          <CiBadgeDollar className="text-2xl" />
+        </span>
+        <div className="w-1/2 p-2 flex  justify-between flex-col">
+          <div>
+            <h1 className="line-clamp-2 text-xl font-bold">
+              This is a feature blog
+            </h1>{" "}
+            <h1 className="line-clamp-1 mt-2 font-light">
+              This is the subtitle of the featured blog.
+            </h1>
+          </div>
+          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
+            <SiCanva className="text-2xl" />
+            <FaAws className="text-2xl" />
+            <SiZoho className="text-3xl" />
+          </div>
+
+          <div className="flex flex-row justify-between ">
+            <h1 className="text-red-500 font-bold text-xl">Ideas</h1>
+            <h1 className="italic">12/05/2024</h1>
+          </div>
+        </div>
+      </div>
+      <div className="relative flex flex-row">
+        <div className=" relative w-1/2 h-52">
+          <img
+            className="object-cover w-full h-full "
+            src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
+          <CiBadgeDollar className="text-2xl" />
+        </span>
+        <div className="w-1/2 p-2 flex  justify-between flex-col">
+          <div>
+            <h1 className="line-clamp-2 text-xl font-bold">
+              This is a feature blog
+            </h1>{" "}
+            <h1 className="line-clamp-1 mt-2 font-light">
+              This is the subtitle of the featured blog.
+            </h1>
+          </div>
+          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
+            <SiCanva className="text-2xl" />
+            <FaAws className="text-2xl" />
+            <SiZoho className="text-3xl" />
+          </div>
+
+          <div className="flex flex-row justify-between ">
+            <h1 className="text-red-500 font-bold text-xl">Ideas</h1>
+            <h1 className="italic">12/05/2024</h1>
           </div>
         </div>
       </div>
 
-      <div className="w-72 flex flex-col  ">
-        <div className="w-full rounded-lg overflow-hidden">
-          <img
-            src={blog}
-            alt="blog image"
-            className="block object-fill w-full h-1/2"
-          />
-        </div>
-
-        <div className="mt-2 p-1 flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h3>Authors Name</h3>
-
-            <span>12/15/2024</span>
-          </div>
-          <h2 className="font-medium text-xl  pb-1 truncate">
-            Blog title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae provident fuga quasi fugit, consequatur doloremque maiores
-            officia necessitatibus qui? Nihil laboriosam quis id voluptas aut
-            sit qui, modi repellat quibusdam!
-          </h2>
-          <span className=" line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-          </span>
-          <div className=" mt-2 flex flex-row justify-between items-center p-1">
-            <h4 className="text-sm mb-1 text-red-500">
-              Topic area of the blog
-            </h4>
-            <button className="bg-black text-white p-1 w-24 ">View more</button>
-          </div>
-        </div>
-      </div>
-      <div className="w-72 flex flex-col  ">
-        <div className="w-full rounded-lg overflow-hidden">
-          <img
-            src={blog}
-            alt="blog image"
-            className="block object-fill w-full h-1/2"
-          />
-        </div>
-
-        <div className="mt-2 p-1 flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h3>Authors Name</h3>
-
-            <span>12/15/2024</span>
-          </div>
-          <h2 className="font-medium text-xl  pb-1 truncate">
-            Blog title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae provident fuga quasi fugit, consequatur doloremque maiores
-            officia necessitatibus qui? Nihil laboriosam quis id voluptas aut
-            sit qui, modi repellat quibusdam!
-          </h2>
-          <span className=" line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-          </span>
-          <div className=" mt-2 flex flex-row justify-between items-center p-1">
-            <h4 className="text-sm mb-1 text-red-500">
-              Topic area of the blog
-            </h4>
-            <button className="bg-black text-white p-1 w-24 ">View more</button>
-          </div>
-        </div>
-      </div>
-      <div className="w-72 flex flex-col  ">
-        <div className="w-full rounded-lg overflow-hidden">
-          <img
-            src={blog}
-            alt="blog image"
-            className="block object-fill w-full h-1/2"
-          />
-        </div>
-
-        <div className="mt-2 p-1 flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h3>Authors Name</h3>
-
-            <span>12/15/2024</span>
-          </div>
-          <h2 className="font-medium text-xl  pb-1 truncate">
-            Blog title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae provident fuga quasi fugit, consequatur doloremque maiores
-            officia necessitatibus qui? Nihil laboriosam quis id voluptas aut
-            sit qui, modi repellat quibusdam!
-          </h2>
-          <span className=" line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-          </span>
-          <div className=" mt-2 flex flex-row justify-between items-center p-1">
-            <h4 className="text-sm mb-1 text-red-500">
-              Topic area of the blog
-            </h4>
-            <button className="bg-black text-white p-1 w-24 ">View more</button>
-          </div>
-        </div>
-      </div>
-      <div className="w-72 flex flex-col  ">
-        <div className="w-full rounded-lg overflow-hidden">
-          <img
-            src={blog}
-            alt="blog image"
-            className="block object-fill w-full h-1/2"
-          />
-        </div>
-
-        <div className="mt-2 p-1 flex flex-col">
-          <div className="flex flex-row justify-between items-center">
-            <h3>Authors Name</h3>
-
-            <span>12/15/2024</span>
-          </div>
-          <h2 className="font-medium text-xl  pb-1 truncate">
-            Blog title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae provident fuga quasi fugit, consequatur doloremque maiores
-            officia necessitatibus qui? Nihil laboriosam quis id voluptas aut
-            sit qui, modi repellat quibusdam!
-          </h2>
-          <span className=" line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-            Consequatur explicabo, id doloribus aperiam ipsam laboriosam!
-          </span>
-          <div className=" mt-2 flex flex-row justify-between items-center p-1">
-            <h4 className="text-sm mb-1 text-red-500">
-              Topic area of the blog
-            </h4>
-            <button className="bg-black text-white p-1 w-24 ">View more</button>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

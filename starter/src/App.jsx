@@ -9,11 +9,13 @@ import Grow from "./Reader/Pages/Grow/Grow";
 import Monetize from "./Reader/Pages/Monetize/Monetize";
 import Topics from "./Reader/Pages/Topics/Topics";
 import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
+import Tools from "./Reader/Components/Tools";
 // import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {
   return (
     <BrowserRouter>
+    <Tools />
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
