@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Reader/Pages/Home/Home";
+import Home from "./Reader/Pages/Home/Featured/Home";
 import Navigation from "./Reader/Components/Navigation";
 import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 import SignIn from "./Reader/Pages/Auth/SignIn";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/monetize" element={<Monetize />} />
         <Route path="/topics" element={<Topics />} />
         <Route path="/read-blog/:blog_id" element={<ReadBlog />} />
-        <Route path="/view-tools" element={<ViewTools  />} />
+        <Route path="/view-tools" element={<ViewTools />} />
       </Routes>
     </BrowserRouter>
   );

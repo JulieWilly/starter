@@ -2,7 +2,7 @@ import React from 'react'
 
 const LeftCard = () => {
   return (
-    <div className="row-span-3 w-full max-h flex items-center flex-col">
+    <div className="row-span-3 w-full max-h flex items-center flex-col border-2 border-green-500">
       <div className="w-10/12 h-[20rem]">
         <img
           className="w-full h-full block object-cover"
