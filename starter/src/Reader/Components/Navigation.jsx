@@ -12,7 +12,7 @@ redirectTo('/sign-in');
     }
   return (
     <>
-      <div className="flex items-center justify-around p-4 flex-row w-full border-b-2 border-black">
+      <div className="flex items-center justify-around p-4 flex-row w-full    ">
         <Link to={"/"}>
           <h1 className="text-3xl  font-bold text-black">Starter</h1>
         </Link>
@@ -59,7 +59,7 @@ redirectTo('/sign-in');
                   color: isActive ? "red" : "black",
                 })}
                 className={
-                  "hover:border-b-1 border-black p-1 flex items-center flex-row "
+                  "hover:border-b-1 p-1 flex items-center flex-row "
                 }
               >
                 <span className=" text-black text-lg"> Topics</span>
@@ -78,7 +78,7 @@ redirectTo('/sign-in');
 
           <div className="flex gap-2">
             <button
-              className="hover:scale-95 hover:transition-all  text-black pr-2 pl-2 pt-1 pb-1 w-24 rounded border border-black hover:bg-[#1B4942] hover:border-none hover:text-white  "
+              className="hover:scale-95 hover:transition-all  text-black pr-2 pl-2 pt-1 pb-1 w-24 rounded border border-[#1B4942] hover:bg-[#1B4942] hover:border-none hover:text-white  "
               onClick={toSignIn}
             >
               Login

@@ -1,4 +1,5 @@
 import subscribeImg from '../../assets/subscribe.jpg'
+import SubscribeInput from './SubscribeInput';
 
 const SubscribePage = () => {
   return (
@@ -13,16 +14,7 @@ const SubscribePage = () => {
         </div>
         <div className='flex flex-col items-center  gap-4'>
           <h1 className='text-3xl text-white font-bold'>Subscribe to our news letter </h1>
-          <div className="flex flex-row gap-2 border-2 bg-white border-white rounded">
-            <input
-              type="email"
-              placeholder=" Enter your email address "
-              className="focus:border-none focus:outline-none border-none ps-2 h-10 w-72"
-            />
-            <button className="bg-[#15D79F] text-xl w-28 text-black p-2 w-24 rounded-sm hover:scale-95 hover:transition-all ">
-              Subscribe
-            </button>
-          </div>
+      <SubscribeInput />
         </div>
       </div>
     </div>
