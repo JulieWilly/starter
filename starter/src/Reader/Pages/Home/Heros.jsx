@@ -26,13 +26,7 @@ const icons = () => {
           <SubscribeInput />
         </div>
       </div>
-      <div className=" h-full w-1/2">
-        {/* <span className="text-3xl">💹</span>
-        <span className="text-3xl">💲</span>
-        <span className="text-3xl">🚀</span>
-        <span className="text-3xl"> 💸</span>
-        <span className="text-3xl">💵</span>
-        <button onClick={icons}>Click me</button> */}
+      <div className=" h-full  grid place-content-center w-1/2">
         <Carousell />
       </div>
     </div>
