@@ -58,7 +58,7 @@ redirectTo('/sign-in');
                 onClick={() => {
                   setOpen(!open);
                 }}
-                className={`hover:border-b-2 border-black flex items-center  `}
+                className={` flex items-center  `}
               >
                 <span className=" text-black text-lg tracking-wide relative">
                   Topics
