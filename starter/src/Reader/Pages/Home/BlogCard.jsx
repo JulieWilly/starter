@@ -5,9 +5,9 @@ import { FaAws } from "react-icons/fa";
 import { SiZoho } from "react-icons/si";
 const BlogCard = () => {
   return (
-    <div className="w-full  grid grid-cols-3 grid-rows-1 mt-4 gap-2">
-      <div className="relative flex flex-row">
-        <div className=" relative w-1/2 h-52">
+    <div className="w-full  grid grid-cols-2 grid-rows-1 mt-4 gap-2">
+      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg">
+        <div className=" relative w-1/2 h-52 ">
           <img
             className="object-cover w-full h-full "
             src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -15,21 +15,16 @@ const BlogCard = () => {
           />
         </div>
         <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
-          <CiBadgeDollar className="text-2xl" />
+          <CiBadgeDollar className="text-3xl" />
         </span>
         <div className="w-1/2 p-2 flex  justify-between flex-col">
           <div>
-            <h1 className="line-clamp-2 text-xl font-bold">
+            <h1 className="line-clamp-2 text-2xl tracking-wide font-bold">
               This is a feature blog
             </h1>{" "}
-            <h1 className="line-clamp-1 mt-2 font-light">
+            <h1 className="line-clamp-2 mt-2 font-light">
               This is the subtitle of the featured blog.
             </h1>
-          </div>
-          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
-            <SiCanva className="text-2xl" />
-            <FaAws className="text-2xl" />
-            <SiZoho className="text-3xl" />
           </div>
 
           <div className="flex flex-row justify-between ">
@@ -38,8 +33,8 @@ const BlogCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-row">
-        <div className=" relative w-1/2 h-52">
+      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg">
+        <div className=" relative w-1/2 h-52 ">
           <img
             className="object-cover w-full h-full "
             src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -47,21 +42,16 @@ const BlogCard = () => {
           />
         </div>
         <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
-          <CiBadgeDollar className="text-2xl" />
+          <CiBadgeDollar className="text-3xl" />
         </span>
         <div className="w-1/2 p-2 flex  justify-between flex-col">
           <div>
-            <h1 className="line-clamp-2 text-xl font-bold">
+            <h1 className="line-clamp-2 text-2xl tracking-wide font-bold">
               This is a feature blog
             </h1>{" "}
-            <h1 className="line-clamp-1 mt-2 font-light">
+            <h1 className="line-clamp-2 mt-2 font-light">
               This is the subtitle of the featured blog.
             </h1>
-          </div>
-          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
-            <SiCanva className="text-2xl" />
-            <FaAws className="text-2xl" />
-            <SiZoho className="text-3xl" />
           </div>
 
           <div className="flex flex-row justify-between ">
@@ -70,39 +60,6 @@ const BlogCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-row">
-        <div className=" relative w-1/2 h-52">
-          <img
-            className="object-cover w-full h-full "
-            src="https://images.pexels.com/photos/15838266/pexels-photo-15838266/free-photo-of-camping-among-trees-with-city-behind-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-          />
-        </div>
-        <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
-          <CiBadgeDollar className="text-2xl" />
-        </span>
-        <div className="w-1/2 p-2 flex  justify-between flex-col">
-          <div>
-            <h1 className="line-clamp-2 text-xl font-bold">
-              This is a feature blog
-            </h1>{" "}
-            <h1 className="line-clamp-1 mt-2 font-light">
-              This is the subtitle of the featured blog.
-            </h1>
-          </div>
-          <div className="flex flex-row gap-2 w-1/2 mt-4 line-clamp-1">
-            <SiCanva className="text-2xl" />
-            <FaAws className="text-2xl" />
-            <SiZoho className="text-3xl" />
-          </div>
-
-          <div className="flex flex-row justify-between ">
-            <h1 className="text-red-500 font-bold text-xl">Ideas</h1>
-            <h1 className="italic">12/05/2024</h1>
-          </div>
-        </div>
-      </div>
-
     </div>
   );
 }

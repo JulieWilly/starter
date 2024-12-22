@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import LeftCard from "./LeftCard";
 import RightCard from "./RightCard";
 import CenterCard from "./CenterCard";
+import MostRead from "../MostRead";
 const FeaturedCard = () => {
   const redirectTo = useNavigate();
 
@@ -16,10 +17,11 @@ const FeaturedCard = () => {
     "
     >
       <div className="flex gap-2  ">
-      <LeftCard redirect={toReadBlog} />
+        <MostRead />
+      {/* <LeftCard redirect={toReadBlog} />
     <CenterCard redirect={toReadBlog} />
 
-     <RightCard  redirect={toReadBlog}/>
+     <RightCard  redirect={toReadBlog}/> */}
       </div>
     </div>
   );
