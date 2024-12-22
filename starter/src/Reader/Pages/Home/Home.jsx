@@ -6,6 +6,7 @@ import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
 import LatestBlogs from "./Latest/LatestBlogs";
 import MostRead from "./MostRead/MostRead";
+import Reviews from "./Reviews/Reviews";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <FeaturedBlogs />
       <MostRead />
       <LatestBlogs />
+      <Reviews />
       <SubscribePage />
       <Footer />
 
