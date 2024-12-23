@@ -1,11 +1,10 @@
-import TopNavigation from "../../../Components/TopNavigation";
 import Image from "../../../Components/Image";
 import Button from "../../../Components/Button";
 
 const MostReadCard = () => {
   return (
     <div>
-      <div className="flex flex-row gap-4  p-4 items-center ">
+      <div className="flex flex-row gap-4  p-2 items-center ">
         <div className="w-1/2 h-[20rem] ">
           <Image
             path={
