@@ -1,4 +1,5 @@
 // import { Link } from "react-router";
+import { useNavigate } from "react-router";
 import blog from "../../../data/blogdata";
 import colors from "../../../data/Color";
 import LeftCard from "./LeftCard";
@@ -7,11 +8,18 @@ import LeftCard from "./LeftCard";
 
 
 const LatestCard = () => {
+  const redirectTo = useNavigate();
+
+  // navigate to read blogs
+  const toReadBlog = (_id) => {
+    redirectTo(`/read-blog/${_id}`)
+  }
   return (
     <div className="flex flex-col">
       <div className="flex flex-row  gap-4 justify-start   p-2 flex-wrap  ">
         {blog.map((blog, index) => (
           <div
+            onClick={() => toReadBlog(blog.id)}
             key={blog.id}
             className={`card border grow  justify-between w-1/4  rounded-md hover:border-[#8D1A5F]   cursor-pointer overflow-hidden`}
           >
@@ -115,9 +123,9 @@ const LatestCard = () => {
       </div> */}
       </div>
 
-      <div className="flex justify-end p-2 text-red-500 underline text-lg">
+      <div className="flex justify-end p-2  text-red-500 underline text-lg">
         {" "}
-        <span className="right">More Updates</span>
+        <span className="right cursor-pointer">More Updates</span>
       </div>
     </div>
   );

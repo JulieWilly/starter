@@ -1,7 +1,7 @@
 // import CreateBlog from "../Blogs/CreateBlog";
-import Categories from "../../Components/Categories";
 import Footer from "../../Components/Footer";
 import SubscribePage from "../../Components/SubscribePage";
+import Topics from "../Topics/Topics";
 import ExploreTool from "./ExploreTool";
 import FeaturedBlogs from "./Featured/FeaturedBlogs";
 import Heros from "./Heros";
@@ -12,11 +12,12 @@ const Home = () => {
   return (
     <div>
       <Heros />
-    
+
       <FeaturedBlogs />
       <MostRead />
       <ExploreTool />
       <LatestBlogs />
+      <Topics />
       <SubscribePage />
       <Footer />
 
