@@ -1,5 +1,4 @@
 import {  Link, NavLink, useNavigate } from "react-router";
-// import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdNavigateNext } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
@@ -11,14 +10,12 @@ const navigatioins = [
 ];
 const Navigation = () => {
 const redirectTo = useNavigate();
-const [open, setOpen] = useState();
+const [open, setOpen] = useState(false);
     // navigate to sign in page.
     const toSignIn = () => {
 redirectTo('/sign-in');
     }
 
-
-      
   return (
     <>
       <div
@@ -67,18 +64,30 @@ redirectTo('/sign-in');
               </NavLink>
               <div
                 className={`absolute delay-150 border border-black   bg-white rounded-lg  text-white  space-y-2  ${
-                  open ? "hidden" : "block"
-                } p-2 w-32`}
+                  open ? "block" : "hidden"
+                } p-2 w-[20rem]  `}
               >
-                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                  Topic 1
-                </h1>
-                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                  Topic 2
-                </h1>{" "}
-                <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                  Topic 3
-                </h1>
+                <hr className="mt-4"/>
+                <div className="grid grid-cols-3 grid-rows-2 items-center p-2">
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    How to
+                  </h1>
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    Ideas
+                  </h1>{" "}
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    Guides
+                  </h1>
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    Topic
+                  </h1>
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    Topic
+                  </h1>
+                  <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
+                    Topic
+                  </h1>
+                </div>
               </div>
             </li>
           </ul>
