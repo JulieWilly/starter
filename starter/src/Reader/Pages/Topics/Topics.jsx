@@ -1,5 +1,3 @@
-import React from 'react'
-import Image from '../../Components/Image';
 import { MdNavigateNext } from "react-icons/md";
 import topics from '../../data/TopicsData';
 import Button from '../../Components/Button';
@@ -10,12 +8,12 @@ const Topics = () => {
         <h1 className="text-[3rem] tracking-wide text-black font-bold ">
           Explore more topics
         </h1>
-        <p className="text-lg tracking-wide ">
+        <p className="text-lg tracking-wide mt-2 ">
           Ready to brush up on something new? We&apos;ve got more to read right
           this way.
         </p>
       </div>
-      <div className="  flex flex-row  mt-4 gap-4 items-center">
+      <div className="  flex flex-row  mt-8 gap-4 items-center">
         {topics.slice(2).map((topic) => (
           <div key={topic.id} className="w-[20rem]">
             <div className="   h-40 overflow-hidden ">
