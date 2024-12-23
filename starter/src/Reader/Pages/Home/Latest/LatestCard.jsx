@@ -1,31 +1,43 @@
 // import { Link } from "react-router";
+import blog from "../../../data/blogdata";
+import colors from "../../../data/Color";
 import LeftCard from "./LeftCard";
 // import { MdNavigateNext } from "react-icons/md";
 // import Image from "../../../Components/Image";
+
+
 const LatestCard = () => {
   return (
-    <div className="flex flex-row  gap-2 justify-start  border-2 border-black  p-2 ">
-      <div className="border-2 border-black border-t-[.85rem] w-1/4 p-4 rounded-md">
+    <div className="flex flex-col">
+      <div className="flex flex-row  gap-4 justify-start   p-2 flex-wrap  ">
+        {blog.map((blog, index) => (
+          <div
+            key={blog.id}
+            className={`card border grow  justify-between w-1/4  rounded-md hover:border-[#8D1A5F]   cursor-pointer overflow-hidden`}
+          >
+            <div className={`h-4 ${colors[index % colors.length]}`}></div>
+            <div className="p-4  ">
+              <h1 className="text-xl font-bold tracking-wide line-clamp-2 ">
+                {blog.title}
+              </h1>
+              <p className="line-clamp-3 mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam optio similique, dolorum ab nam tempora rem numquam
+                libero placeat cupiditate qui, quibusdam laborum temporibus quae
+                labore, laboriosam quas animi consequuntur?
+                {/* {blog.subtitle} */}
+              </p>
 
-        <h1 className="text-xl font-bold tracking-wide line-clamp-2 ">
-          The Ultimate Checklist for Launching a Start-Up
-        </h1>
-        <p className="line-clamp-3 mt-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          optio similique, dolorum ab nam tempora rem numquam libero placeat
-          cupiditate qui, quibusdam laborum temporibus quae labore, laboriosam
-          quas animi consequuntur?
-        </p>
+              <div className=" gap-4 mt-8 flex items-center">
+                <span className="font-bold text-red-500">{blog.topic}</span>
+                <span>{blog.date}</span>
+              </div>
+            </div>
+          </div>
+        ))}
 
-        <div className=" gap-4 mt-8 flex items-center">
-          <span className="font-bold text-red-500">LifeStyle</span>
-          <span>12/11/2024</span>
-        </div>
-      </div>
-      <div>B</div>
-
-      {/* <LeftCard /> */}
-      {/* <div>
+        {/* <LeftCard /> */}
+        {/* <div>
         <div className="flex flex-col gap-2 p-2">
           <div className="flex flex-row-reverse justify-between">
             <div className="w-1/2  p-2">
@@ -101,6 +113,12 @@ const LatestCard = () => {
           <MdNavigateNext className="text-3xl" />
         </div>
       </div> */}
+      </div>
+
+      <div className="flex justify-end p-2 text-red-500 underline text-lg">
+        {" "}
+        <span className="right">More Updates</span>
+      </div>
     </div>
   );
 };
