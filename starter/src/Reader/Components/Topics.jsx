@@ -10,9 +10,12 @@ const items = [
 ];
 const Topics = () => {
   return (
-    <div className='flex flex-row gap-2 flex-wrap'>
+    <div className="flex flex-row gap-2 flex-wrap ">
       {items.map((topics) => (
-        <h1 key={topics.id} className="  w-max p-2 rounded-xl bg-[#1B4942] text-white ">
+        <h1
+          key={topics.id}
+          className="  w-max p-2 rounded-xl bg-[#1B4942] text-white cursor-pointer "
+        >
           {topics.category}
         </h1>
       ))}
