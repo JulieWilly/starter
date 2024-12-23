@@ -7,6 +7,7 @@ const MostRead = () => {
 
   return (
     <div className="p-8    mt-8 w-full bg-[#FBF8F2]  ">
+
   <div className="p-2 mb-8 ">
     <Categories />
   </div>

@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <Heros />
+    
       <FeaturedBlogs />
       <MostRead />
       <ExploreTool />
