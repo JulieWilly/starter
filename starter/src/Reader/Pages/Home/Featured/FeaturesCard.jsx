@@ -103,7 +103,7 @@ const FeaturesCard = () => {
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all .5"
@@ -129,7 +129,7 @@ const FeaturesCard = () => {
               <span className="absolute top-1 left-1  p-1 bg-red-500 rounded">
                 <CiBadgeDollar className="text-3xl" />
               </span>
-              <div className="w-1/2 p-2 flex  justify-between flex-col">
+              <div className="w-1/2 p-2 flex  justify-between flex-col ">
                 <div>
                   <h1 className="line-clamp-2 text-2xl tracking-wide font-bold">
                     {featured.title}
@@ -139,7 +139,7 @@ const FeaturesCard = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-row justify-between ">
+                <div className="flex flex-row justify-between items-center ">
                   <h1 className="text-red-500 font-bold text-xl">
                     {featured.topic}
                   </h1>

@@ -1,14 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { FaFacebookF } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import navigatioins from '../data/navLinks';
+import items from '../data/bottomFooter';
+
+const socials = [
+  { id: 1, icon: <FaGoogle />, name: "Google" },
+  { id: 1, icon: <FaFacebookF />, name: "Facebook" },
+  { id: 1, icon: <FaLinkedinIn />, name: "LinkedIn" },
+];
 const Footer = () => {
   return (
     <div>
       <div className="flex bg-[#222222] p-8 gap-2 h-max flex-col ">
         <div className="flex flex-row gap-10">
-          <div className="w-1/2">
+          <div className="w-2/5">
             <h1 className="text-5xl font-bold  text-white"> Starter Blogs</h1>
             <p className="pt-8 p-2     text-white tracking-wide">
               Join over <span>1000 +</span> bloggers who use Starter Blog to
@@ -16,36 +24,45 @@ const Footer = () => {
               create and share your knowledge, and guides via a blogs and
               explore more tools that can move your business to the next level.{" "}
             </p>
-
-            <div className="mt-8 flex flex-row gap-2">
-              <div className="border-2 border-white rounded-full grid place-content-center w-12 h-12 hover:text-red-600   hover:scale-110 transition delay-150 duration-300 ease-in-out">
-                <FaFacebookF className="text-white text-2xl" />
-              </div>
-              <div className="border-2 border-white rounded-full grid place-content-center w-12 h-12 hover:text-red-600   hover:scale-110 transition delay-150 duration-300 ease-in-out">
-                <FaGoogle className="text-white text-2xl" />
-              </div>{" "}
-              <div className="border-2 border-white rounded-full grid place-content-center w-12 h-12 hover:text-red-600   hover:scale-110 transition delay-150 duration-300 ease-in-out">
-                <FaLinkedinIn className="text-white text-2xl" />
-              </div>{" "}
-            </div>
           </div>
 
-          <div className="w-1/2">
-            <h1 className="text-2xl text-white"> Explore</h1>
-            <div className="mt-6">
-              <Link className="text-lg text-white" to={"/start"}>
-                Start
-              </Link>
+          <div className="flex flex-row w-3/5">
+            <div className="w-1/2">
+              <h1 className="text-2xl text-white"> Explore</h1>
+              <div className="mt-6 flex flex-col gap-2 ">
+                {navigatioins.map((name) => (
+                  <NavLink
+                    key={name.id}
+                    to={name.path}
+                    style={({ isActive }) => ({
+                      color: isActive ? "red" : "black",
+                    })}
+                    className={"hover:border-b border-white  w-max   "}
+                  >
+                    <span className=" text-white text-lg tracking-wide ">
+                      {" "}
+                      {name.name}
+                    </span>
+                    {name.icon}
+                  </NavLink>
+                ))}
+              </div>
             </div>
-            <div>
-              <Link className="text-lg text-white" to={"/grow"}>
-                Grow
-              </Link>
-            </div>
-            <div>
-              <Link className="text-lg text-white" to={"/monetize"}>
-                Monetize
-              </Link>
+            <div className="w-1/2">
+              <h1 className="text-2xl text-white"> Follow Us</h1>
+              <div className="mt-4 flex flex-row gap-2">
+                {socials.map((social) => (
+                  <div
+                    key={social.id}
+                    className="flex flex-col gap-2  p-2 items-center hover:text-red-600 hover:scale-110 transition delay-150 duration-300 ease-in-out "
+                  >
+                    <span className=" text-white text-2xl border-2 border-white rounded-full  place-content-center w-12 h-12 flex items-center justify-center   ">
+                      {social.icon}
+                    </span>
+                    <span className=" text-white text-xl ">{social.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -55,9 +72,9 @@ const Footer = () => {
             Copyright © 2024 Starter, All rights reserved.
           </h1>
           <div className="flex flex-row gap-3 text-white ">
-            <h1>Privacy Policy</h1>
-            <h1>Terms of Use</h1>
-            <h1>Cookies Policy</h1>
+            {items.map((item) => (
+              <h1 key={item.id}>{item.name}</h1>
+            ))}
           </div>
         </div>
       </div>

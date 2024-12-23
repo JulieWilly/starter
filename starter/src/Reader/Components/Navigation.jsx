@@ -1,13 +1,8 @@
 import {  Link, NavLink, useNavigate } from "react-router";
-import { MdNavigateNext } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
-const navigatioins = [
-  { id: 1, name: "Start", path:'/start' ,},
-  { id: 2, name: "Grow", path:'/grow' },
-  { id: 3, name: "Monetize", path:'/monetize'},
-  // { id: 4, name: "Topics", path:'/topics', icon: <MdNavigateNext /> },
-];
+import navigatioins from "../data/navLinks";
+
 const Navigation = () => {
 const redirectTo = useNavigate();
 const [open, setOpen] = useState(false);
@@ -47,7 +42,7 @@ redirectTo('/sign-in');
                 </NavLink>
               ))}
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 style={({ isActive }) => ({
                   color: isActive ? "red" : "black",
@@ -64,7 +59,7 @@ redirectTo('/sign-in');
               </NavLink>
               <div
                 className={`absolute delay-150 border border-black   bg-white rounded-lg  text-white  space-y-4   ${
-                  open ? "block" : "hidden"
+                  open ? "hidden" : "hidden"
                 }  w-auto  `}
               >
                 <hr className="mt-4" />
@@ -89,7 +84,7 @@ redirectTo('/sign-in');
                   </h1>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className=" flex flex-row items-center">
