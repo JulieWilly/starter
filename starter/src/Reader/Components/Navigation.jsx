@@ -63,12 +63,12 @@ redirectTo('/sign-in');
                 <MdNavigateNext className="text-black rotate-90 text-2xl" />
               </NavLink>
               <div
-                className={`absolute delay-150 border border-black   bg-white rounded-lg  text-white  space-y-2  ${
+                className={`absolute delay-150 border border-black   bg-white rounded-lg  text-white  space-y-4   ${
                   open ? "block" : "hidden"
-                } p-2 w-[20rem]  `}
+                }  w-auto  `}
               >
-                <hr className="mt-4"/>
-                <div className="grid grid-cols-3 grid-rows-2 items-center p-2">
+                <hr className="mt-4" />
+                <div className="grid grid-cols-3 grid-rows-2 items-center p-2 gap-2 capitalize">
                   <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
                     How to
                   </h1>
@@ -79,13 +79,13 @@ redirectTo('/sign-in');
                     Guides
                   </h1>
                   <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                    Topic
+                    reviews
                   </h1>
                   <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                    Topic
+                    case studies
                   </h1>
                   <h1 className="p-2 hover:bg-[#F5F5F5] hover:text-[#1B4942]  text-xl  bg-white text-black rounded-sm cursor-pointer">
-                    Topic
+                    resources
                   </h1>
                 </div>
               </div>

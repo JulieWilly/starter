@@ -3,7 +3,7 @@ import Image from "../../Components/Image"
 import { MdNavigateNext } from "react-icons/md";
 const ReadBlog = () => {
   return (
-    <div className="p-4 flex items-center justify-center flex-col">
+    <div className="p-4 flex  flex-col">
       <div className="flex items-center  gap-2  w-full font-light">
         <Link to={'/'}>Home</Link> <MdNavigateNext /> Blog Names
       </div>
