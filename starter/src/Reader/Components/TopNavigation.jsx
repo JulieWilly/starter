@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router';
 
-const TopNavigation = ({sectName, isSet}) => {
+const TopNavigation = ({sectName}) => {
   return (
     <div className=" flex w-full items-center ">
       <hr className="h-1 bg-[#1B4942]  w-full" />
