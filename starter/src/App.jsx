@@ -7,13 +7,11 @@ import SignUp from "./Reader/Pages/Auth/SignUp";
 import Start from "./Reader/Pages/Start/Start";
 import Grow from "./Reader/Pages/Grow/Grow";
 import Monetize from "./Reader/Pages/Monetize/Monetize";
-import Topics from "./Reader/Pages/Topics/Topics";
 import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
 import Tools from "./Reader/Components/Tools";
 import ViewTools from "./Reader/Pages/Tools/ViewTools";
 import Home from "./Reader/Pages/Home/Home";
 import ErrorPage from "./Reader/Components/ErrorPage";
-// import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {
   return (
