@@ -1,10 +1,17 @@
 
 import { CiBadgeDollar } from "react-icons/ci";
+import { useNavigate } from "react-router";
 
 const FeaturesCard = () => {
+  const redirectTo = useNavigate();
+
+  // redirect to read blog page
+  const toReadBlog = () => {
+    redirectTo("/read-blog/:blog_id");
+  }
   return (
-    <div className="w-full  grid grid-cols-2 grid-rows-1 mt-4 gap-2">
-      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg">
+    <div className="w-full  grid grid-cols-2 grid-rows-1 mt-4 gap-2 ">
+      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg" onClick={toReadBlog}>
         <div className=" relative w-1/2 h-52 ">
           <img
             className="object-cover w-full h-full "
@@ -31,7 +38,7 @@ const FeaturesCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg">
+      <div className="relative flex flex-row bg-[#F0EAE5] rounded-lg" onClick={toReadBlog}>
         <div className=" relative w-1/2 h-52 ">
           <img
             className="object-cover w-full h-full "

@@ -12,6 +12,7 @@ import ReadBlog from "./Reader/Pages/Blogs/ReadBlog";
 import Tools from "./Reader/Components/Tools";
 import ViewTools from "./Reader/Pages/Tools/ViewTools";
 import Home from "./Reader/Pages/Home/Home";
+import ErrorPage from "./Reader/Components/ErrorPage";
 // import CreateBlog from "./Reader/Pages/Blogs/CreateBlog";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/monetize" element={<Monetize />} />
         <Route path="/read-blog/:blog_id" element={<ReadBlog />} />
         <Route path="/view-tools" element={<ViewTools />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
