@@ -1,4 +1,5 @@
 // import CreateBlog from "../Blogs/CreateBlog";
+import Categories from "../../Components/Categories";
 import Footer from "../../Components/Footer";
 import SubscribePage from "../../Components/SubscribePage";
 import ExploreTool from "./ExploreTool";
