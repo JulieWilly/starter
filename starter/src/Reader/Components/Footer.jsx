@@ -14,7 +14,7 @@ const socials = [
 const Footer = () => {
   return (
     <div>
-      <div className="flex bg-[#222222] p-8 gap-2 h-max flex-col ">
+      <div className="flex bg-[#222222] p-8 gap-2 h-max flex-col small:w-full small:flex-col medium:flex-col ">
         <div className="flex flex-row gap-10">
           <div className="w-2/5">
             <h1 className="text-5xl font-bold  text-white"> Starter Blogs</h1>
@@ -66,7 +66,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className=" h-max mt-10 col-span-3 flex flex-row justify-between items-center">
           <h1 className="text-white">
             Copyright © 2024 Starter, All rights reserved.

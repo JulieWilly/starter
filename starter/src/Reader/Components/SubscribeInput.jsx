@@ -7,7 +7,7 @@ const SubscribeInput = () => {
         placeholder=" Enter your email address "
         className="focus:border-none focus:outline-none border-none ps-2 h-10 w-full"
       />
-      <button className="bg-[#15D79F] text-xl w-28 text-black p-2  rounded-sm hover:scale-95 hover:transition-all ">
+      <button className="bg-[#15D79F] text-xl w-36 text-black p-2  rounded-sm hover:scale-95 hover:transition-all ">
         Subscribe
       </button>
     </div>

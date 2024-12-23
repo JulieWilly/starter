@@ -2,6 +2,7 @@ import {  Link, NavLink, useNavigate } from "react-router";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import navigatioins from "../data/navLinks";
+import { MdNavigateNext } from "react-icons/md";
 
 const Navigation = () => {
 const redirectTo = useNavigate();
@@ -42,7 +43,7 @@ redirectTo('/sign-in');
                 </NavLink>
               ))}
             </li>
-            {/* <li>
+            <li>
               <NavLink
                 style={({ isActive }) => ({
                   color: isActive ? "red" : "black",
@@ -84,7 +85,7 @@ redirectTo('/sign-in');
                   </h1>
                 </div>
               </div>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <div className=" flex flex-row items-center">
