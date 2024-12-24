@@ -29,6 +29,7 @@ const MostRead = () => {
                     "https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg?auto=compress&cs=tinysrgb&w=600"
                   }
                 />
+               
                 <div className="absolute top-2 left-2">
                   <h1 className="bg-red-400 w-max p-1 text-sm ">Premium</h1>
                 </div>

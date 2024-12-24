@@ -1,28 +1,43 @@
 const topics = [
   {
     id: 1,
-    imageUrl: "http://dummyimage.com/188x100.png/dddddd/000000",
+    imageUrl:
+      "https://images.pexels.com/photos/28396375/pexels-photo-28396375/free-photo-of-curving-road-through-scenic-black-and-white-landscape.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     topic: "Healthy Living Tips",
+    subtitle:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
   },
   {
     id: 2,
-    imageUrl: "http://dummyimage.com/249x100.png/5fa2dd/ffffff",
+    imageUrl:
+      "https://images.pexels.com/photos/29617303/pexels-photo-29617303/free-photo-of-urban-cityscape-with-ferris-wheel-and-traffic.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     topic: "Travel Destinations",
+    subtitle:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
   },
   {
     id: 3,
-    imageUrl: "http://dummyimage.com/235x100.png/dddddd/000000",
+    imageUrl:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
     topic: "Technology Trends",
+    subtitle:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
   },
   {
     id: 4,
-    imageUrl: "http://dummyimage.com/137x100.png/ff4444/ffffff",
+    imageUrl:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
     topic: "Healthy Living Tips",
+    subtitle:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
   },
   {
     id: 5,
-    imageUrl: "http://dummyimage.com/134x100.png/ff4444/ffffff",
+    imageUrl:
+      "https://images.pexels.com/photos/28283869/pexels-photo-28283869/free-photo-of-a-mountain-with-clouds-and-fog-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     topic: "Fashion Trends",
+    subtitle:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit possimus dolorum tempore delectus dicta excepturi vitae corporis! Voluptatibus, laborum atque?",
   },
 ];
 
