@@ -7,7 +7,7 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 
 const MostRead = () => {
   return (
-    <div className="p-2 mt-8 w-full flex flex-ro  ">
+    <div className="p-2 mt-16 w-full flex flex-ro  ">
       {/* Featured
       <div className="mt-6 ">
  <FeaturesCard />
