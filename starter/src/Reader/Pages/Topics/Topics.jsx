@@ -1,12 +1,12 @@
-import topics from '../../data/TopicsData';
+import topics from "../../data/TopicsData";
 import ScaleCard from "../../Components/ScaleCard";
-
 import { IoArrowBack } from "react-icons/io5";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Link } from "react-router";
+
 const Topics = () => {
   return (
-    <div className="flex w-full  flex-col items-center justify-center p-4 mb-20 gap-8">
+    <div className="flex w-full  flex-col items-center justify-center p-4 mb-[6rem] gap-8">
       <div className='flex items-center justify-center flex-col  w-full"'>
         <h1 className="text-[3rem] tracking-wide text-black font-bold ">
           Explore more topics
@@ -17,7 +17,6 @@ const Topics = () => {
         </p>
       </div>
       <div className="flex flex-row gap-2">
-        {" "}
         {topics.slice(0, 3).map((topic) => (
           <ScaleCard
             key={topic.id}
@@ -47,6 +46,7 @@ const Topics = () => {
           />
         ))}
       </div>
+
       <div>
         <div className="flex flex-row gap-8 ">
           <span className="text-5xl font-bold cursor-pointer">
@@ -59,6 +59,6 @@ const Topics = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Topics
+export default Topics;
