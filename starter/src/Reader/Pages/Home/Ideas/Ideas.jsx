@@ -16,7 +16,7 @@ const ideas = [
     title: "Ideas",
     desc: "A long story that I would like to share generations to come and have more listeners.",
     icons: <FaHeadSideVirus />,
-    next:<GrNext />,
+    next: <GrNext />,
   },
   {
     id: 3,
@@ -25,40 +25,61 @@ const ideas = [
     icons: <TbArrowGuide />,
     next: <GrNext />,
   },
+  {
+    id: 4,
+    title: "Resources",
+    desc: "A long story that I would like to share generations to come and have more listeners.",
+    icons: <TbArrowGuide />,
+    next: <GrNext />,
+  },
+  {
+    id: 5,
+    title: "Case Studies",
+    desc: "A long story that I would like to share generations to come and have more listeners.",
+    icons: <TbArrowGuide />,
+    next: <GrNext />,
+  },
+  {
+    id: 6,
+    title: "Reviews",
+    desc: "A long story that I would like to share generations to come and have more listeners.",
+    icons: <TbArrowGuide />,
+    next: <GrNext />,
+  },
 ];
-
 
 const Ideas = () => {
   return (
-    <div className="border-2 border-black p-4 flex flex-col items-center w-full">
-      <div className="flex items-center flex-col">
-        <h1 className="text-4xl tracking-wide font-bold text-[3rem] text-center">
-          Discover your potential.
-        </h1>
-        <h1 className="text-xl tracking-wide font-light mt-2 w-3/4  text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit minus
-          sed dolorum ipsa nemo sunt veniam tempore? Nemo, itaque eum?
+    <div className="flex items-center flex-col">
+      <div>
+        <h1 className="p-2 text-2xl font-bold text-[#1B4942]">
+          Elevate your business to a higher new level
         </h1>
       </div>
-      <div className=" w-full p-8  flex items-center gap-8 flex-col">
-        {ideas.map((howTo) => (
+      <div className="p-8 flex flex-row justify-around  flex-wrap gap-4">
+        {ideas.map((idea) => (
           <div
-            key={howTo.id}
-            className="flex flex-row gap-2 items-center border-b-2 border-green-800 w-3/4  p-2 "
+            key={idea.id}
+            className="flex p-8 rounded-lg w-[19rem]  gap-4 hover:bg-[#F1F7F7] shadow-lg"
           >
-            <span className="text-[2rem] font-bold  grid place-content-center ">
-              {howTo.icons}
-            </span>
-            <div className=" flex flex-row items-center justify-between w-full">
-              <div>
-                <h1 className="text-2xl font-bold tracking-wide ">
-                  {howTo.title}
+            <div>
+              <span className="text-4xl text-blue-500 ">{idea.icons}</span>
+            </div>
+            <div>
+              {" "}
+              <div className=" ">
+                <h1 className="text-3xl font-bold  tracking-wide ">
+                  {idea.title}
                 </h1>
-                <h1>{howTo.desc}</h1>
-              </div>{" "}
-              <div className="flex items-center gap-2">
-                <Link to={'/'}>Explore</Link>
-                <span className=" font-bold">{howTo.next}</span>
+                <h1 className="text-lg tracking-wide  mt-2">{idea.desc}</h1>
+              </div>
+              <div className="flex flex-row items-center hover:underline   mt-4 ">
+                <span className="text-lg   text-blue-500 hover:text-blue-300 cursor-pointer">
+                  Learn more
+                </span>
+                <span className="text-sm   text-blue-500 hover:text-blue-300">
+                  {idea.next}
+                </span>
               </div>
             </div>
           </div>

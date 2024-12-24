@@ -15,10 +15,11 @@ const Home = () => {
       <Heros />
 
       <FeaturedBlogs />
-      <MostRead />
+      <LatestBlogs />
+
+      {/* <MostRead /> */}
       <Ideas />
       <ExploreTool />
-      <LatestBlogs />
       <Topics />
       <SubscribePage />
       <Footer />

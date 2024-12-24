@@ -13,7 +13,8 @@ const LatestBlogs = () => {
   }
   return (
     <div className=" p-8 pb-16 w-full">
-      <TopNavigation sectName={"Latest Blogs"} />
+      {/* <TopNavigation sectName={"Latest Blogs"} /> */}
+      <h1 className="p-2 text-2xl font-bold text-[#1B4942]">Latest Posts</h1>
       <LatestCard />
     </div>
   );
