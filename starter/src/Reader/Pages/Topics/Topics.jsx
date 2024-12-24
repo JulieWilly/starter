@@ -3,7 +3,7 @@ import topics from '../../data/TopicsData';
 import Button from '../../Components/Button';
 const Topics = () => {
   return (
-    <div className="flex w-full  flex-col items-center justify-center p-4">
+    <div className="flex w-full  flex-col items-center justify-center p-4 mb-12">
       <div className='flex items-center justify-center flex-col  w-full"'>
         <h1 className="text-[3rem] tracking-wide text-black font-bold ">
           Explore more topics

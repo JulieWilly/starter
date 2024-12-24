@@ -1,7 +1,7 @@
 
 const SubscribeInput = () => {
   return (
-    <div className="flex flex-row gap-2 border-2 bg-white border-green rounded">
+    <div className="flex flex-row gap-2 border-b-2 overflow-hidden border-black bg-white border-green  p-1">
       <input
         type="email"
         placeholder=" Enter your email address "
